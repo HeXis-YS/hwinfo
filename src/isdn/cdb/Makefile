@@ -16,7 +16,7 @@ isdn_cdb.h: isdn_cdb ISDN.CDB.txt
 	./isdn_cdb ISDN.CDB.txt isdn_cdb.h
 
 lex.yy.c: isdn_cdb.lex
-	lex isdn_cdb.lex
+	flex isdn_cdb.lex
 
 isdn_cdb: isdn_cdb.o cdb_read.o
 
