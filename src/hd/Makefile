@@ -8,4 +8,4 @@ version.h: $(TOPDIR)/VERSION
 	@echo "#define HD_VERSION_STRING \"`cat $(TOPDIR)/VERSION`\"" >$@
 
 $(LIBHD_D): $(OBJS)
-	ar r $(LIBHD) $?
+	$(AR) r $(LIBHD) $?

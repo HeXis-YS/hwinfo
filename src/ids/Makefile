@@ -48,7 +48,7 @@ endif
 IDFILES += src/pci src/storage src/sound src/mouse src/braille
 
 $(LIBHD_D): hd_ids.o
-	ar r $(LIBHD) $?
+	$(AR) r $(LIBHD) $?
 
 check_hd: check_hd.c
 	$(CC) $(CFLAGS) $< -o $@

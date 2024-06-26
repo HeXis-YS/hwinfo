@@ -5,5 +5,5 @@ SUBDIRS = cdb
 include $(TOPDIR)/Makefile.common
 
 $(LIBHD_D): $(OBJS)
-	ar r $(LIBHD) $?
+	$(AR) r $(LIBHD) $?
 

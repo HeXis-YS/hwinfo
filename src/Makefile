@@ -12,7 +12,7 @@ include $(TOPDIR)/Makefile.common
 #endif
 
 $(LIBHD): $(OBJS)
-	ar r $@ $?
+	$(AR) r $@ $?
 	@rm -f $(LIBHD_D)
 
 ifdef SHARED_FLAGS
